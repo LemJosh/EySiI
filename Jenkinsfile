@@ -1,11 +1,9 @@
-environment {
+pipeline {
+    environment {
     JFROG_CLI_BUILD_NAME = "my-build-name"
     JFROG_CLI_BUILD_NUMBER = "18"
 }
-
-pipeline {
     agent any
-
     stages {
         stage('Build') {
             steps {
